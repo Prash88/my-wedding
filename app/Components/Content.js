@@ -142,6 +142,11 @@ class Content extends React.Component<void, State, Props> {
   render() {
     return (
       <div>
+        <div className='header'>
+          <h4 className="ribbon">
+            <strong className="ribbon-content">Wedding Invitation</strong>
+          </h4>
+        </div>
         <div
           id="envelope"
           className={this.state.envelopeClass}
@@ -163,8 +168,7 @@ class Content extends React.Component<void, State, Props> {
         </div>
         <canvas ref='canvas' id="container">
     		</canvas>
-        <a
-          className="fork"
+        <a className="fork"
           href="https://github.com/Prash88/my-wedding"
           target="blank">
             <img src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" />

@@ -1,18 +1,18 @@
-@import url('//fonts.googleapis.com/css?family=Roboto');
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url('//fonts.googleapis.com/css?family=Ubuntu"');
 
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Open Sans', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', Meiryo, メイリオ, 'YuGothic', '游ゴシック', Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-family: Ubuntu;
 	background: #B7004E;
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	font-style: normal;
+	font-variant: normal;
 }
 
 .app {
@@ -29,20 +29,6 @@ body {
 
 a{
   cursor:pointer;
-}
-
-.header {
-	font-size: 250%;
-	font-weight: bold;
-	color: white;
-	flex-wrap: nowrap;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
-  justify-content: center;
 }
 
 .contentTextPulse {

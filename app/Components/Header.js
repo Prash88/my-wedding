@@ -10,9 +10,7 @@ const React = require('react');
 class Header extends React.Component {
   render() {
     return (
-      <div className='header'>
-        A letter for you
-      </div>
+      <div />
     );
   }
 }
