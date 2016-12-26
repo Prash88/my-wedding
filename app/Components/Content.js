@@ -158,7 +158,7 @@ class Content extends React.Component<void, State, Props> {
             onClick={(e) => this._closeClick(e)}>
           </div>
           <div className={this.state.textClass}>
-            I love you ♥ ♥ ♥
+            This is my sample wedding invitation
           </div>
         </div>
         <canvas ref='canvas' id="container">
