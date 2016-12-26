@@ -65,6 +65,6 @@ npm run testing
 
 Try out the code on heroku:
 
-https://prashanth.sweta.herokuapp.com/
+https://prash88.github.io/my-wedding/
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
