@@ -7,13 +7,15 @@
 'use strict';
 
 const React = require('react');
+const Menu = require('./Menu');
+
 const ANIMATION_TIME = 500;
 
 type State = {
   envelopeClass: string,
   closeClass: string,
   envelopeUpClass: string,
-  textClass: string,
+  menuClass: string,
 };
 
 type Props = {
@@ -49,7 +51,7 @@ class Content extends React.Component<void, State, Props> {
       envelopeClass: 'pulse',
       closeClass: 'closePulse',
       envelopeUpClass: 'envelopeUpPulse',
-      textClass: 'contentTextPulse',
+      menuClass: 'menuPulse',
     };
   }
 
@@ -119,7 +121,7 @@ class Content extends React.Component<void, State, Props> {
     });
     setTimeout(() => {
       this.setState({
-        textClass: 'contentTextFlip',
+        menuClass: 'menuFlip',
       });
     }, ANIMATION_TIME);
   }
@@ -129,7 +131,7 @@ class Content extends React.Component<void, State, Props> {
       envelopeClass: 'flip-back',
       closeClass: 'closePulse',
       envelopeUpClass: 'envelopeUpPulse',
-      textClass: 'contentTextPulse',
+      menuClass: 'menuPulse',
     });
     setTimeout(() => {
       this.setState({
@@ -162,8 +164,8 @@ class Content extends React.Component<void, State, Props> {
             className={this.state.closeClass}
             onClick={(e) => this._closeClick(e)}>
           </div>
-          <div className={this.state.textClass}>
-            This is my sample wedding invitation
+          <div className={this.state.menuClass}>
+            <Menu />
           </div>
         </div>
         <canvas ref='canvas' id="container">
