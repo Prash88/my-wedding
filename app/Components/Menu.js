@@ -97,7 +97,7 @@ class Menu extends React.Component<void, State, Props> {
             </div>
           </nav>
         </header>
-        <div className={this.state.contentText}>
+        <div className='header'>
           This is a sample {this.state.contentText}
         </div>
       </div>
