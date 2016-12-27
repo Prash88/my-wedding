@@ -1,5 +1,6 @@
 require("./Assets/style.scss")
 require("./Assets/headerStyle.scss")
+require("./Assets/menuStyle.scss")
 
 const React = require('react');
 import ReactDom from 'react-dom';
