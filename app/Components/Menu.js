@@ -63,7 +63,7 @@ class Menu extends React.Component<void, State, Props> {
   render() {
     const photoGallery = (this.state.contentText === 'Photos') ?
       <PhotoGallery /> :
-      <div />;
+      null;
     return (
       <div>
         <header className='masthead'>
@@ -102,9 +102,7 @@ class Menu extends React.Component<void, State, Props> {
             </div>
           </nav>
         </header>
-        <div className='content'>
-          {photoGallery}
-        </div>
+        {photoGallery}
       </div>
 	  );
   }
