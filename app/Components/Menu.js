@@ -45,20 +45,24 @@ class Menu extends React.Component<void, State, Props> {
   componentWillReceiveProps(nextProps: Props) {
   }
 
-  _invitationClick() {
+  _invitationClick(e) {
     this.setState({ contentText: 'Invitation' });
+    e.stopPropagation();
   }
 
-  _photosClick() {
+  _photosClick(e) {
     this.setState({ contentText: 'Photos' });
+    e.stopPropagation();
   }
 
-  _calendarClick() {
+  _calendarClick(e) {
     this.setState({ contentText: 'Calendar' });
+    e.stopPropagation();
   }
 
-  _wishesClick() {
+  _wishesClick(e) {
     this.setState({ contentText: 'Wishes' });
+    e.stopPropagation();
   }
   render() {
     const photoGallery = (this.state.contentText === 'Photos') ?
@@ -68,7 +72,7 @@ class Menu extends React.Component<void, State, Props> {
       <div>
         <header className='masthead'>
           <div className='brand-container'>
-            <a href='#'>
+            <a href=''>
               <div className='brand-initials'>PS</div>
               <div className='brand-name'>Prashanth Weds Sweta</div>
             </a>
