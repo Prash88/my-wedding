@@ -7,6 +7,7 @@
 'use strict';
 
 const React = require('react');
+const PhotoGallery = require('./PhotoGallery');
 
 type State = {
   contentText: string,
@@ -31,7 +32,9 @@ class Menu extends React.Component<void, State, Props> {
   }
 
   componentDidMount() {
-
+    this.setState({
+      contentText: 'Invitation',
+    });
   }
 
 
@@ -40,7 +43,6 @@ class Menu extends React.Component<void, State, Props> {
   }
 
   componentWillReceiveProps(nextProps: Props) {
-
   }
 
   _invitationClick() {
@@ -59,6 +61,9 @@ class Menu extends React.Component<void, State, Props> {
     this.setState({ contentText: 'Wishes' });
   }
   render() {
+    const photoGallery = (this.state.contentText === 'Photos') ?
+      <PhotoGallery /> :
+      <div />;
     return (
       <div>
         <header className='masthead'>
@@ -71,25 +76,25 @@ class Menu extends React.Component<void, State, Props> {
           <nav>
             <div className='nav-container'>
               <div>
-                <a className='slide' href='#test1' onClick={(e) => this._invitationClick(e)}>
+                <a className='slide' onClick={(e) => this._invitationClick(e)}>
                   <span className='element'>In</span>
                   <span className='name'>Invitation</span>
                 </a>
               </div>
               <div>
-                <a className='slide' href='#test2' onClick={(e) => this._photosClick(e)}>
+                <a className='slide' onClick={(e) => this._photosClick(e)}>
                   <span className='element'>Ph</span>
                   <span className='name'>Photos</span>
                 </a>
               </div>
               <div>
-                <a className='slide' href='#test3' onClick={(e) => this._calendarClick(e)}>
+                <a className='slide' onClick={(e) => this._calendarClick(e)}>
                   <span className='element'>Ca</span>
                   <span className='name'>Calendar</span>
                 </a>
               </div>
               <div>
-                <a className='slide' href='#test4' onClick={(e) => this._wishesClick(e)}>
+                <a className='slide' onClick={(e) => this._wishesClick(e)}>
                   <span className='element'>Wi</span>
                   <span className='name'>Wishes</span>
                 </a>
@@ -97,13 +102,12 @@ class Menu extends React.Component<void, State, Props> {
             </div>
           </nav>
         </header>
-        <div className='header'>
-          This is a sample {this.state.contentText}
+        <div className='photo'>
+          {photoGallery}
         </div>
       </div>
 	  );
   }
-
 }
 
 module.exports = Menu;
