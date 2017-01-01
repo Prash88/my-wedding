@@ -12,7 +12,7 @@
     "start": "node server/index.js",
     "test": "karma start",
     "testing": "karma start --single-run=false",
-    "deploy" : "npm run build&&gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "repository": "git@github.com:cgreening/webpack-starter.git",
   "author": "Prashanth Sampath Kumar",
@@ -22,7 +22,8 @@
     "cors": "^2.7.1",
     "express": "^4.12.4",
     "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "react-dom": "^15.3.1",
+    "react-image-gallery": "^0.7.5"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",

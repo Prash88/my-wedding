@@ -48,7 +48,6 @@ a{
 }
 
 #envelope {
-  position: absolute;
   border-style: solid;
   border-width: 1.4em 2em 1.4em 2em;
   border-color: LightSkyBlue deepskyblue dodgerblue dodgerblue;
@@ -123,8 +122,9 @@ a{
 
 .flip-back {
   animation: flip-back .5s cubic-bezier(.68, 0, .27, 1) forwards;
-	top: 47%;
+	top: 44%;
 	left: 47%;
+	position: absolute;
 }
 
 .pulse {
@@ -132,7 +132,8 @@ a{
   -webkit-animation: pulse 3s infinite;
   -moz-animation: pulse 3s infinite;
 	top: 44%;
-	left: 44%;
+	left: 47%;
+	position: absolute;
 }
 
 @keyframes flip {

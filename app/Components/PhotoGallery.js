@@ -16,6 +16,8 @@ const photo6 = require('../Assets/DSC_3356.jpg');
 const photo7 = require('../Assets/DSC_3365.jpg');
 const photo8 = require('../Assets/DSC_3353.jpg');
 
+import ImageGallery from 'react-image-gallery';
+
 type State = {
 };
 
@@ -45,16 +47,56 @@ class PhotoGallery extends React.Component<void, State, Props> {
 
   }
 
-  componentWillReceiveProps(nextProps: Props) {
-
+  handleImageLoad(event) {
+    console.log('Image loaded ', event.target)
   }
 
   render() {
+    const images = [
+     {
+       original: photo1,
+       description: 'During our engagement',
+     },
+     {
+       original: photo2,
+       description: 'During our engagement',
+     },
+     {
+       original: photo3,
+       description: 'During our engagement',
+     },
+     {
+       original: photo4,
+       description: 'During our engagement',
+     },
+     {
+       original: photo5,
+       description: 'During our engagement',
+     },
+     {
+       original: photo6,
+       description: 'During our engagement',
+     },
+     {
+       original: photo7,
+       description: 'During our engagement',
+     },
+     {
+       original: photo8,
+       description: 'During our engagement',
+     },
+   ];
     return (
-      <div />
+     <ImageGallery
+       className='gallery'
+       ref={i => this._imageGallery = i}
+       items={images}
+       slideInterval={2000}
+       showFullscreenButton={false}
+       autoPlay={true}
+       onImageLoad={this.handleImageLoad}/>
     );
   }
-
 }
 
 module.exports = PhotoGallery;
