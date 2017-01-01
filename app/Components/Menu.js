@@ -8,6 +8,7 @@
 
 const React = require('react');
 const PhotoGallery = require('./PhotoGallery');
+const Wishes = require('./Wishes');
 
 type State = {
   contentText: string,
@@ -68,6 +69,9 @@ class Menu extends React.Component<void, State, Props> {
     const photoGallery = (this.state.contentText === 'Photos') ?
       <PhotoGallery /> :
       null;
+    const wishes = (this.state.contentText === 'Wishes') ?
+      <Wishes /> :
+      null;
     return (
       <div>
         <header className='masthead'>
@@ -107,6 +111,7 @@ class Menu extends React.Component<void, State, Props> {
           </nav>
         </header>
         {photoGallery}
+        {wishes}
       </div>
 	  );
   }
