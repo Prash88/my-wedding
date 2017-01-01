@@ -16,9 +16,11 @@ nav label {
 }
 nav div.nav-container {
   display: table-row;
+  padding: 10px;
 }
 nav div.nav-container > div {
   display: table-cell;
+  padding: 10px;
 }
 nav div.nav-container > div:nth-of-type(5n+1) .slide, nav div.nav-container > div:nth-of-type(5n+1) a {
   border-color: #8cc63f;
