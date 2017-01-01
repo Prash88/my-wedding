@@ -49,8 +49,6 @@ a{
 
 #envelope {
   position: absolute;
-  height: 0;
-  width: 0;
   border-style: solid;
   border-width: 1.4em 2em 1.4em 2em;
   border-color: LightSkyBlue deepskyblue dodgerblue dodgerblue;
@@ -58,6 +56,8 @@ a{
   -moz-box-shadow: 0 5px 5px -5px #262626;
   box-shadow: 0 5px 5px -5px #262626;
   cursor: pointer;
+	height: 0;
+  width: 0;
 }
 
 #envelope:hover {
@@ -99,12 +99,6 @@ a{
   transition: all .2s ease-in;
 }
 
-.flip {
-  animation: flip .5s cubic-bezier(.68, 0, .27, 1) forwards;
-	left: 0;
-  right: 0;
-}
-
 .closePulse {
 	display: none;
 }
@@ -123,8 +117,8 @@ a{
 
 .flip {
   animation: flip .5s cubic-bezier(.68, 0, .27, 1) forwards;
-	top: 10%;
-	left: 10%;
+	left: 0;
+	right: 0;
 }
 
 .flip-back {
@@ -145,12 +139,13 @@ a{
 	0% {
 		border-color: whitesmoke;
 		border-width: 11em 8em 11em 8em;
+		background-color: whitesmoke;
 	}
   100% {
     transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
     border-color: whitesmoke;
-		height: 80%;
-		width: 80%;
+		height: 100%;
+		width: 100%;
 		background-color: whitesmoke;
   }
 }
@@ -164,8 +159,8 @@ a{
   100% {
     -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
     border-color: whitesmoke;
-		height: 80%;
-		width: 80%;
+		height: 100%;
+		width: 100%;
 		background-color: whitesmoke;
   }
 }
@@ -179,8 +174,8 @@ a{
   100% {
     -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
     border-color: whitesmoke;
-		height: 80%;
-		width: 80%;
+		height: 100%;
+		width: 100%;
 		background-color: whitesmoke;
   }
 }

@@ -7,7 +7,6 @@
 'use strict';
 
 const React = require('react');
-const Carousel = require('nuka-carousel');
 const photo1 = require('../Assets/DSC_3489.jpg');
 const photo2 = require('../Assets/DSC_3482.jpg');
 const photo3 = require('../Assets/DSC_3404.jpg');
@@ -27,7 +26,6 @@ class PhotoGallery extends React.Component<void, State, Props> {
 
   state: State;
   props: Props;
-  mixins: [Carousel.ControllerMixin];
 
   static propTypes = {
   };
@@ -52,21 +50,8 @@ class PhotoGallery extends React.Component<void, State, Props> {
   }
 
   render() {
-    console.log('render');
     return (
-      <Carousel
-        slidesToShow={1}
-        dragging={true}
-        edgeEasing="easeOutCirc">
-        <img src={photo1}/>
-        <img src={photo2}/>
-        <img src={photo3}/>
-        <img src={photo4}/>
-        <img src={photo5}/>
-        <img src={photo6}/>
-        <img src={photo7}/>
-        <img src={photo8}/>
-      </Carousel>
+      <div />
     );
   }
 

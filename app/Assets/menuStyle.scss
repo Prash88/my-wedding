@@ -95,28 +95,10 @@ nav a, nav label {
   transition-timing-function: ease-in;
 }
 nav .slide {
-  padding: 10px 10px;
-  font-size: 1em;
   display: block;
-  color: #393939;
-  border-top: 4px solid transparent;
-  position: relative;
-  -moz-transition-property: border-width, color;
-  -o-transition-property: border-width, color;
-  -webkit-transition-property: border-width, color;
-  transition-property: border-width, color;
-  -moz-transition-duration: 0.1s, 0.2s;
-  -o-transition-duration: 0.1s, 0.2s;
-  -webkit-transition-duration: 0.1s, 0.2s;
-  transition-duration: 0.1s, 0.2s;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  -moz-transition-delay: 0.2s, 0s;
-  -o-transition-delay: 0.2s, 0s;
-  -webkit-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s;
+  width: auto;
+  border-left: solid 4px #393939;
+  border-top: none;
 }
 nav .slide .element {
   font-size: 1.25em;
@@ -206,58 +188,6 @@ nav input:checked ~ .has-child .name:after {
   transform: rotateX(180deg);
 }
 
-@media only screen and (min-width: 48.0625em) {
-  nav {
-    display: block;
-    table-layout: auto;
-  }
-  nav div.nav-container {
-    display: block;
-  }
-  nav div.nav-container > div {
-    display: block;
-    margin: 5px 0;
-  }
-  nav div.nav-container > div:hover .slide {
-    border-left-width: 55px;
-    -moz-transition-delay: 0;
-    -o-transition-delay: 0;
-    -webkit-transition-delay: 0;
-    transition-delay: 0;
-  }
-  nav .slide {
-    display: block;
-    width: auto;
-    border-left: solid 4px #393939;
-    border-top: none;
-  }
-  nav .slide .element {
-    line-height: 1;
-  }
-  nav .child-menu {
-    display: block;
-    position: relative;
-    top: 0;
-    background-color: transparent !important;
-    margin-left: 55px;
-    width: auto;
-    max-height: 0px;
-    overflow: hidden;
-    border-top: none;
-  }
-  nav .child-menu a {
-    color: #393939;
-    display: block;
-    padding: 3px 0 3px 10px;
-    font-size: 0.8125em;
-  }
-  nav input:checked ~ div.child-menu {
-    max-height: 120px;
-  }
-  nav input:checked ~ .slide {
-    border-width: 55px;
-  }
-}
 .masthead {
   //font-family: "Open Sans", sans-serif;
 }
@@ -298,16 +228,43 @@ nav input:checked ~ .has-child .name:after {
 }
 
 @media only screen and (min-width: 48.0625em) {
-  .masthead {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
+  nav div.nav-container > div:hover .slide {
+    border-left-width: 55px;
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
   }
-  .masthead .brand-container {
-    padding: 10px 0 50px 10px;
-  }
-  .masthead .brand-container a {
+  nav .slide {
     display: block;
+    width: auto;
+    border-left: solid 4px #393939;
+    border-top: none;
+  }
+  nav .slide .element {
+    line-height: 1;
+  }
+  nav .child-menu {
+    display: block;
+    position: relative;
+    top: 0;
+    background-color: transparent !important;
+    margin-left: 55px;
+    width: auto;
+    max-height: 0px;
+    overflow: hidden;
+    border-top: none;
+  }
+  nav .child-menu a {
+    color: #393939;
+    display: block;
+    padding: 3px 0 3px 10px;
+    font-size: 0.8125em;
+  }
+  nav input:checked ~ div.child-menu {
+    max-height: 120px;
+  }
+  nav input:checked ~ .slide {
+    border-width: 55px;
   }
 }

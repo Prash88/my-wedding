@@ -69,8 +69,8 @@ class Menu extends React.Component<void, State, Props> {
         <header className='masthead'>
           <div className='brand-container'>
             <a href='#'>
-              <span className='brand-initials'>PS</span>
-              <span className='brand-name'>Prashanth Weds Sweta</span>
+              <div className='brand-initials'>PS</div>
+              <div className='brand-name'>Prashanth Weds Sweta</div>
             </a>
           </div>
           <nav>
@@ -102,7 +102,7 @@ class Menu extends React.Component<void, State, Props> {
             </div>
           </nav>
         </header>
-        <div className='photo'>
+        <div className='content'>
           {photoGallery}
         </div>
       </div>
