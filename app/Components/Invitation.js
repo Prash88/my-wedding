@@ -42,7 +42,7 @@ class Invitation extends React.Component<void, State, Props> {
       <div>
         <div className="invite">
           <div className ="info">
-            <h2>Together with our parents, we cordially invite you and your famaliy's gracious presence at the wedding & reception of</h2>
+            <h2>Together with our parents, we cordially invite you and your family's gracious presence at the wedding & reception of</h2>
             <h1>Prashanth & Sweta</h1>
               <p className= "line">_________________________________</p>
               <h2>Reception</h2>
