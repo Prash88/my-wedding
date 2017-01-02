@@ -5,6 +5,7 @@ require("./Assets/photoStyle.scss")
 require("./Assets/calendarStyle.scss")
 require("./Assets/invitationStyle.scss")
 require("./Assets/wishesStyle.scss")
+require("./Assets/footerStyle.scss")
 
 const React = require('react');
 import ReactDom from 'react-dom';

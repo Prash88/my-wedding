@@ -25,7 +25,8 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-facebook": "^2.2.5",
-    "react-image-gallery": "^0.7.5"
+    "react-image-gallery": "^0.7.5",
+    "react-share": "^1.11.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
