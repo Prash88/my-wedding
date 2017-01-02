@@ -47,43 +47,43 @@ class Calendar extends React.Component<void, State, Props> {
           <li className= "events">
             <ul className="events-detail">
               <li>
-                <a href="#">
+                <a>
                   <span className="event-time">10.00 am</span>
                   <span className="event-name"> - Vratham</span>
                   <br />
-                  <span className="event-location">Address : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
+                  <span className="event-location">At : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a>
                   <span className="event-time">3.00 pm</span>
                   <span className="event-name"> - Nichayathartham</span>
                   <br />
-                  <span className="event-location">Address : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
+                  <span className="event-location">At : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Marriage Reception</span>
                   <br />
-                  <span className="event-location">Address : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
+                  <span className="event-location">At : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Vocal Performance : Smt. Ranjani Sivakumar & Party</span>
                   <br />
-                  <span className="event-location">Address : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
+                  <span className="event-location">At : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Other vocal & dance performances</span>
                   <br />
-                  <span className="event-location">Address : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
+                  <span className="event-location">At : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
                 </a>
               </li>
             </ul>
@@ -95,11 +95,11 @@ class Calendar extends React.Component<void, State, Props> {
           <li className= "events">
             <ul className="events-detail">
               <li>
-                <a href="#">
+                <a>
                   <span className="event-time">7:30am - 8.30 am</span>
-                  <span className="event-name"> - Mumurtham</span>
+                  <span className="event-name"> - Muhurtham</span>
                   <br />
-                  <span className="event-location">Address : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
+                  <span className="event-location">At : Vijaya Mahal, 33 Pondi bazar, Thiyagaraya Nagar, Chennai - 11</span>
                 </a>
               </li>
             </ul>
@@ -111,11 +111,11 @@ class Calendar extends React.Component<void, State, Props> {
           <li className= "events">
             <ul className="events-detail">
               <li>
-                <a href="#">
+                <a>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Marriage Reception</span>
                   <br />
-                  <span className="event-location">Address : Akshaya Hall, Amutha Bhavan, Sampath Nagar, Erode - 11</span>
+                  <span className="event-location">At : Akshaya Hall, Amutha Bhavan, Sampath Nagar, Erode - 11</span>
                 </a>
               </li>
             </ul>

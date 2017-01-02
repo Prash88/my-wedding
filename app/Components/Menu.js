@@ -35,6 +35,10 @@ class Menu extends React.Component<void, State, Props> {
   }
 
   componentDidMount() {
+    const photoGallery = <PhotoGallery />;
+    const wishes = <Wishes />;
+    const calendar = <Calendar />;
+    const invitation = <Invitation />;
     this.setState({
       contentText: 'Invitation',
     });
