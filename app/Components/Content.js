@@ -44,7 +44,7 @@ class Content extends React.Component<void, State, Props> {
     this.heartHeight = 60;
     this.heartWidth = 64;
     this.hearts = [];
-    this.heartImage = 'http://i58.tinypic.com/ntnw5.png';
+    this.heartImage = require('../Assets/hearts.png');
     this.maxHearts = 8;
     this.minScale = 0.4;
     this.state = {
