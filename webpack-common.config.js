@@ -34,9 +34,9 @@ module.exports = {
   ],
   // https://www.npmjs.com/package/html-webpack-plugin - generate our html file from a template - makes it easier to include custom stuff
   indexPagePlugin: new HtmlWebpackPlugin({
-                          inject: true,
-                          title: 'Prashanth Weds Sweta',
-                          filename: 'index.html',
-                          template: './app/index_template.html'
-                        })
+    inject: true,
+    title: 'Prashanth & Sweta',
+    filename: 'index.html',
+    template: './app/index_template.html'
+  }),
 }

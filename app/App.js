@@ -9,6 +9,7 @@ const React = require('react');
 const Header = require('./Components/Header');
 const Content = require('./Components/Content');
 const Favicon = require('react-favicon');
+const Footer = require('./Components/Footer');
 const faviconUrl = require('./Assets/favicon.ico');
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Header />
         <Content />
         <Favicon url={ faviconUrl }/>
+        <Footer />
       </div>
     );
   }
