@@ -44,7 +44,7 @@ class Invitation extends React.Component<void, State, Props> {
           <div className ="info">
             <h2>Together with our parents, we cordially invite you and your family's gracious presence at the wedding & reception of</h2>
             <h1>Prashanth & Sweta</h1>
-              <p className= "line">_________________________________</p>
+              <p className= "line">___________________________</p>
               <h2>Reception</h2>
               <p>On Wednesday, Feb 8, 2017</p>
               <p>After 6:30 PM</p>
@@ -58,8 +58,8 @@ class Invitation extends React.Component<void, State, Props> {
               <h2>Reception</h2>
               <p>On Sunday, Feb 12, 2017</p>
               <p>After 6:30 PM</p>
-              <p>Akshaya Hall, Amutha Bhavan, Sampath Nagar, Erode - 11</p>
-              <p className= "line">__________________________________</p>
+              <p>At Akshaya Hall, Amutha Bhavan, Sampath Nagar, Erode - 11</p>
+              <p className= "line">____________________________</p>
               <h2>With best compliments from near and dear</h2>
           </div>
         </div>
