@@ -47,7 +47,7 @@ class Calendar extends React.Component<void, State, Props> {
           <li className= "events">
             <ul className="events-detail">
               <li>
-                <a>
+                <a href='https://goo.gl/maps/gY4VRxph5FC2'>
                   <span className="event-time">10.00 am</span>
                   <span className="event-name"> - Vratham</span>
                   <br />
@@ -55,7 +55,7 @@ class Calendar extends React.Component<void, State, Props> {
                 </a>
               </li>
               <li>
-                <a>
+                <a href='https://goo.gl/maps/gY4VRxph5FC2'>
                   <span className="event-time">3.00 pm</span>
                   <span className="event-name"> - Nichayathartham</span>
                   <br />
@@ -63,7 +63,7 @@ class Calendar extends React.Component<void, State, Props> {
                 </a>
               </li>
               <li>
-                <a>
+                <a href='https://goo.gl/maps/gY4VRxph5FC2'>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Marriage Reception</span>
                   <br />
@@ -71,7 +71,7 @@ class Calendar extends React.Component<void, State, Props> {
                 </a>
               </li>
               <li>
-                <a>
+                <a href='https://goo.gl/maps/gY4VRxph5FC2'>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Vocal Performance : Smt. Ranjani Sivakumar & Party</span>
                   <br />
@@ -79,7 +79,7 @@ class Calendar extends React.Component<void, State, Props> {
                 </a>
               </li>
               <li>
-                <a>
+                <a href='https://goo.gl/maps/gY4VRxph5FC2'>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Other vocal & dance performances</span>
                   <br />
@@ -95,7 +95,7 @@ class Calendar extends React.Component<void, State, Props> {
           <li className= "events">
             <ul className="events-detail">
               <li>
-                <a>
+                <a href='https://goo.gl/maps/gY4VRxph5FC2'>
                   <span className="event-time">7:30am - 8.30 am</span>
                   <span className="event-name"> - Muhurtham</span>
                   <br />
@@ -111,7 +111,7 @@ class Calendar extends React.Component<void, State, Props> {
           <li className= "events">
             <ul className="events-detail">
               <li>
-                <a>
+                <a href='https://goo.gl/maps/jUSwxwVJv8K2'>
                   <span className="event-time">6:30pm - 10.00 pm</span>
                   <span className="event-name"> - Marriage Reception</span>
                   <br />
