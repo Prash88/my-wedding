@@ -1,0 +1,34 @@
+.invite {
+  height: 40%;
+  width: 80%;
+  //margin: -110px auto;
+  border-radius: 10px;
+  color: #666;
+  padding: 0px 0px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  align-self: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: linen;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info h1, .info h2, .info p {
+  text-align: center;
+  padding: 0px;
+  margin: 5px 5px;
+}
+
+.info h2 {
+  //font-family: 'Great Vibes', cursive;
+  font-weight: 100;
+}
+
+
+p.line {
+  margin: 0px auto 20px auto;
+  //color: #999;
+}

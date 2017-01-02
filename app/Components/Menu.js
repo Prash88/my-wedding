@@ -10,6 +10,7 @@ const React = require('react');
 const PhotoGallery = require('./PhotoGallery');
 const Wishes = require('./Wishes');
 const Calendar = require('./Calendar');
+const Invitation = require('./Invitation');
 
 type State = {
   contentText: string,
@@ -76,6 +77,9 @@ class Menu extends React.Component<void, State, Props> {
     const calendar = (this.state.contentText === 'Calendar') ?
       <Calendar /> :
       null;
+    const invitation = (this.state.contentText === 'Invitation') ?
+      <Invitation /> :
+      null;
     return (
       <div>
         <header className='masthead'>
@@ -117,6 +121,7 @@ class Menu extends React.Component<void, State, Props> {
         {photoGallery}
         {wishes}
         {calendar}
+        {invitation}
       </div>
 	  );
   }
