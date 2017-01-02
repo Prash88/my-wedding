@@ -9,6 +9,7 @@
 const React = require('react');
 const PhotoGallery = require('./PhotoGallery');
 const Wishes = require('./Wishes');
+const Calendar = require('./Calendar');
 
 type State = {
   contentText: string,
@@ -72,6 +73,9 @@ class Menu extends React.Component<void, State, Props> {
     const wishes = (this.state.contentText === 'Wishes') ?
       <Wishes /> :
       null;
+    const calendar = (this.state.contentText === 'Calendar') ?
+      <Calendar /> :
+      null;
     return (
       <div>
         <header className='masthead'>
@@ -112,6 +116,7 @@ class Menu extends React.Component<void, State, Props> {
         </header>
         {photoGallery}
         {wishes}
+        {calendar}
       </div>
 	  );
   }
