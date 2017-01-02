@@ -7,9 +7,7 @@
 'use strict';
 
 const React = require('react');
-import {
-  FBComments,
-} from 'facebook-plugins';
+import FacebookProvider, { Comments } from 'react-facebook';
 
 type State = {
 };
@@ -41,11 +39,9 @@ class Wishes extends React.Component<void, State, Props> {
 
   render () {
     return (
-      <FBComments appId="1815795118693626"
-        href="http://prash88.github.io/my-wedding/"
-        width={750}
-        numPosts={5}
-        locale="en_US"/>
+      <FacebookProvider appID="1815795118693626">
+        <Comments href="https://prash88.github.io/my-wedding/" />
+      </FacebookProvider>
     );
   }
 }
